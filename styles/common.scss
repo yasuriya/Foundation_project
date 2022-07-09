@@ -7,6 +7,7 @@
   border-radius: 2px;
   background-color: #3040c4;
   color: #fff;
+  cursor: pointer;
 }
 .hide_desktop {
   @include for-large-up {

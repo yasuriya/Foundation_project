@@ -61,8 +61,10 @@
   }
   &__column {
     margin-top: 30px;
+    text-decoration: none;
 
     @include for-large-up {
+      text-decoration: none;
       margin-top: 0;
       margin-right: 29px;
     }
@@ -84,6 +86,7 @@
 
 .nav-links {
   width: 265px;
+
   &__title {
     margin: 0;
     font-weight: bold;
@@ -100,6 +103,10 @@
     font-size: 18px;
     line-height: 30px;
     color: $text-color-light-grey;
+  }
+  &__list a {
+    text-decoration: inherit;
+    color: inherit;
   }
 }
 

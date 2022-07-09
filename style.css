@@ -7,6 +7,7 @@
   border-radius: 2px;
   background-color: #3040c4;
   color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1400px) {
@@ -74,10 +75,10 @@
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
 }
 
-.navigation {
+.nav-list {
   display: none;
 }
-.navigation__arrow {
+.nav-list__arrow {
   display: inline-block;
   margin-left: 11px;
   width: 8px;
@@ -85,22 +86,11 @@
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 @media screen and (min-width: 1400px) {
-  .navigation {
+  .nav-list {
     display: block;
     margin: 7px 75px 0px auto;
   }
 }
-
-.top-section {
-  background-color: #f3c6bd;
-}
-@media screen and (min-width: 1400px) {
-  .top-section {
-    background-color: #f3c6bd;
-    padding-top: 39px;
-  }
-}
-
 .nav-list__item {
   margin-right: 50px;
   font-size: 18px;
@@ -113,6 +103,16 @@
 }
 .nav-list__item_selected {
   font-weight: 700;
+}
+
+.top-section {
+  background-color: #f3c6bd;
+}
+@media screen and (min-width: 1400px) {
+  .top-section {
+    background-color: #f3c6bd;
+    padding-top: 39px;
+  }
 }
 
 .logo {
@@ -254,6 +254,7 @@
   font-weight: 700;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
   .headline__learn-more-btn {
@@ -544,9 +545,11 @@
 }
 .additional-navigation__column {
   margin-top: 30px;
+  text-decoration: none;
 }
 @media screen and (min-width: 1400px) {
   .additional-navigation__column {
+    text-decoration: none;
     margin-top: 0;
     margin-right: 29px;
   }
@@ -587,6 +590,10 @@
   font-size: 18px;
   line-height: 30px;
   color: rgba(43, 41, 45, 0.6);
+}
+.nav-links__list a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .footer-links {
@@ -692,6 +699,7 @@ html {
   font-size: 16px;
   font-family: "Work Sans";
   color: #2b292d;
+  overflow-x: hidden;
 }
 
 .page {
